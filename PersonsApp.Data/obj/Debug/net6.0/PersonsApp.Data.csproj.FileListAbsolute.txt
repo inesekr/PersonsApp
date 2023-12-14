@@ -1,0 +1,17 @@
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\bin\Debug\net6.0\PersonsApp.Data.deps.json
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\bin\Debug\net6.0\PersonsApp.Data.runtimeconfig.json
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\bin\Debug\net6.0\PersonsApp.Data.dll
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\bin\Debug\net6.0\PersonsApp.Data.pdb
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\bin\Debug\net6.0\PersonsApp.Core.dll
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\bin\Debug\net6.0\PersonsApp.Core.pdb
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.csproj.AssemblyReference.cache
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.AssemblyInfoInputs.cache
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.AssemblyInfo.cs
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.csproj.CopyComplete
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.dll
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\refint\PersonsApp.Data.dll
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.pdb
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\PersonsApp.Data.genruntimeconfig.cache
+C:\Users\inese\Kleintech_rezerve\PersonsApp\PersonsApp.Data\obj\Debug\net6.0\ref\PersonsApp.Data.dll

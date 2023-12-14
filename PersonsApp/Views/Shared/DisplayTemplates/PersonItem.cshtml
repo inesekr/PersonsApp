@@ -1,0 +1,48 @@
+﻿@model PersonsApp.Models.PersonItemViewModel
+
+<tr>
+    <td>
+        @Model.FullName
+    </td>
+    <td>
+        @Model.Age
+    </td>
+    <td>
+        <div class="dropdown">
+            <input type="hidden" id="personId_@Model.Id" name="personId" value="@Model.Id" />
+            <input type="hidden" id="maritalStatus_@Model.Id" name="maritalStatus" value="@Model.MaritalStatus" />
+
+            @if (string.IsNullOrEmpty(Model.MaritalStatus))
+            {
+                <input type="text" placeholder="Select marital status" readonly="readonly" />
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-caret-down"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="actionsDropdown">
+                    <li a class="dropdown-item" onclick="openSinglePopup(@Model.Id)">
+                        Single
+                    </li>
+                    <li a class="dropdown-item" onclick="openMarriedPopup(@Model.Id)">
+                        Married
+                    </li>
+                </ul>
+            }
+            else
+            {
+                if (Model.MaritalStatus == "Single")
+                {
+                    <input type="text" placeholder="@Model.MaritalStatus" readonly="readonly" />
+                }
+                else
+                {
+                    <input type="hidden" id="spouseFullName_@Model.Id" value="@Model.SpouseFullName" />
+                    <input type="text" placeholder="Married (@Model.SpouseFullName)" readonly="readonly" />
+                }
+
+                <button class="btn btn-secondary dropdown-toggle disabled" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-caret-down"></i>
+                </button>
+            }
+        </div>
+    </td>
+</tr>

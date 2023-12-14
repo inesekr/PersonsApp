@@ -1,0 +1,66 @@
+﻿@model PersonsApp.Models.PersonAddViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>PersonAddViewModel</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Person" asp-action="Create" id="personForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Id" type="hidden" value="0" />
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" type="date" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group" id="phoneNumbers">
+                <label>Phone Number(s)</label>
+                <div class="input-group mb-3">
+                    <input type="text" name="PhoneNumbers[0]" class="form-control" />
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="addPhoneNumberField()">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" id="addresses">
+                <label>Address(es)</label>
+                <div class="row">
+                    <div class="col-8 address-group mb-3 d-flex align-items-center">
+                        <input type="text" name="Addresses[0]" class="form-control" />
+                    </div>
+                    <div class="ml-2 col-4 address-group-append d-flex align-items-center justify-content-center">
+                        <input type="radio" name="PrimaryAddressIndex" value="0" checked />
+                        <span class="px-2">Primary</span>
+                        <button class="btn btn-outline-secondary" type="button" onclick="addAddressField()">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Cancel" class="btn btn-warning" formaction="/Home/Index" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="~/js/create.js"></script>

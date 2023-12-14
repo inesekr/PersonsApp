@@ -1,0 +1,40 @@
+﻿﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model PersonListViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>FullName</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in Model.PersonItems)
+                {
+                    @Html.DisplayFor(model => person, "PersonItem")
+                }
+
+            </tbody>
+          
+        </table>
+
+    <partial name="_SingleModal" />
+
+    <partial name="_MarriedModal" />
+    
+    @Html.ActionLink("Create", "Create", "Person", new {}, new {@class="btn btn-primary"})
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script src="~/js/index.js"></script>

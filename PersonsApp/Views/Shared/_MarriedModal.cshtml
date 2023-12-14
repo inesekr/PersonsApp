@@ -1,0 +1,31 @@
+﻿<div class="modal fade" id="marriageModal" tabindex="-1" role="dialog" aria-labelledby="marriageModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="marriageModalLabel">Select Spouse</h5>
+            </div>
+
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Start typing to search..." id="spouseSearchInput">
+                <ul id="spouseSearchResults" class="list-group mt-2"></ul>
+            </div>
+
+            <div class="modal-footer">
+                <form asp-controller="PersonStatus" asp-action="SetMarriedStatus" id="marriedForm" method="post">
+                    <input type="hidden" id="marriedPersonId" name="personId" />
+                    <input type="hidden" id="spouseId" name="spouseId" />
+                    <input type="hidden" id="marriedMaritalStatus" name="maritalStatus" />
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-success" />
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal" onclick="redirectToIndex()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
